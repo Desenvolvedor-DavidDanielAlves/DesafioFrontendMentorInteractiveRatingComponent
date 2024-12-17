@@ -1,0 +1,129 @@
+*{
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --secondary-color: hsl(0, 0%, 100%);
+    --terciary-color: hsl(217, 12%, 63%);
+    --quaternary-color: hsl(213, 19%, 18%);
+    --quinary-color: hsl(216, 12%, 8%);
+    --senary-color: hsla(217, 12%, 63%, 0.103);
+}
+
+body {
+    background-color: var(--quinary-color);
+    color: var(--terciary-color);
+    font-family: 'Overpass';
+    font-size: 1rem;
+    font-weight: 300;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    width: 90%;
+    margin: auto;
+}
+
+.secao {
+    background-color: var(--quaternary-color);
+    padding: 2rem;
+    border-radius: 14px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.secao .titulo {
+    margin: .7rem 0;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.secao .paragrafo {
+    font-size: .9rem;
+}
+
+.secao__rating .imagem {
+    background-color: var(--senary-color);
+    padding: .7rem;
+    border-radius: 100%;
+}
+
+.secao__rating .formulario {
+    text-align: center;
+}
+
+.secao__rating .formulario .submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: .8rem 0;
+    border: none;
+
+    &:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer;
+    }
+}
+
+.secao__rating .formulario .opcoes {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin: 1.5rem 0;
+}
+
+.secao__rating .formulario .opcoes .opcao {
+    padding: 1rem 1.2rem;
+    border-radius: 100%;
+    background-color: var(--senary-color);
+    color: var(--terciary-color);
+    font-weight: 700;
+    border: none;
+    border: none;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--quinary-color);
+        cursor: pointer;
+    }
+
+}
+
+.secao__thankyou {
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.secao__thankyou .titulo__subtitulo {
+    margin: 1.5rem 0;
+}
+
+.rating {
+    padding: .3rem .7rem;
+    background-color: var(--senary-color);
+    color: var(--primary-color);
+    width: fit-content;
+    border-radius: 30px;
+    font-weight: 400;
+    margin: 1rem auto 1.5rem auto;
+    font-size: .9rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.ativo {
+    background-color: var(--secondary-color) !important;
+    color: var(--quinary-color) !important;
+}
